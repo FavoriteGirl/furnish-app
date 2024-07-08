@@ -1,3 +1,3 @@
-import heroBg from './images/wallart.jpeg';
+import heroBg from './images/abstract.jpeg';
 
 export { heroBg };

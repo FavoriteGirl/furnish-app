@@ -1,29 +1,33 @@
 import { heroBg } from "../../../assets";
-
 const Hero = () => {
   return (
-    <div className="flex h-screen">
-      <div className="w-1/2 bg-[#DCD4C9] place-content-center">
-        <div className="mx-auto w-fit flex flex-col items-start gap-y-4 p-40">
-        <div className="flex flex-col text-5xl">
-          <span className="font-thin">Best Design of</span>
-          <span className="font-bold">Furniture Collections</span>
-          </div>
-         
-            <p>Crafting Comfort, Creating Homes.</p>
-            <button className="bg-white px-6 py-2 rounded-full drop-shadow-lg text-yellow-950">DISCOVER</button>
+    <div
+      className="flex items-center h-screen"
+      style={{ backgroundColor: "#E6D5C7" }}
+    >
+      <div className="w-1/2 flex flex-col align-middle justify-end">
+        <div className=" w-2/3 mx-auto  flex flex-col items-start gap-y-5">
+          <h1 className="text-5xl text-gray-600 font-light">Best Design of</h1>
+          <span className="text-4xl text-gray-950 font-bold">
+            Furniture Collections
+          </span>
+          <p className="font-light text-xl w-2/3 text-gray-600">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia
+          </p>
+          <button
+            style={{ color: "#634738" }}
+            className="bg-white text-md font-bold p-3 px-5 my-5 border capitalize rounded-full shadow-lg hover:shadow-xl"
+          >
+            DISCOVER
+          </button>
         </div>
-         
-       
       </div>
-
       <div className="w-1/2">
-        <img src={heroBg}
-          alt="hero background"
-          className="object-cover w-full h-full" />
+        <img src={heroBg} alt="hero background" className="w-full h-screen" />
       </div>
     </div>
-  )
+  );
 };
 
-export default Hero;
+export default Hero;
